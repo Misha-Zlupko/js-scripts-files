@@ -1,0 +1,15 @@
+.mov-btn {
+  padding: 5px 15px;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  background-color: cornflowerblue;
+  color: snow;
+}
+.moving-box {
+  width: 70px;
+  height: 70px;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-color: lightgreen;
+}

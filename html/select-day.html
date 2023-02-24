@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .calendar {
+        display: flex;
+      }
+      .date-item {
+        width: 25%;
+        display: flex;
+        font-size: large;
+      }
+      .date-item :first-child {
+        margin-right: 10px;
+      }
+      .digital-clock {
+        display: flex;
+        justify-content: center;
+        font-size: large;
+        margin-bottom: 20px;
+      }
+      .clock-container {
+        display: flex;
+        justify-content: center;
+      }
+      .clock {
+        background-image: url("https://kartinkin.net/uploads/posts/2022-03/1647029752_2-kartinkin-net-p-tsiferblat-chasov-bez-strelok-kartinki-2.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        transition: transform 1s linear;
+      }
+      .arrow-hour {
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        height: 60%;
+        top: 20%;
+        left: 49%;
+      }
+      .arrow-hour div {
+        width: 6px;
+        height: 50%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 3px;
+      }
+      .arrow-minute {
+        position: absolute;
+        height: 70%;
+        top: 15%;
+        left: 49%;
+      }
+      .arrow-minute div {
+        height: 50%;
+        background-color: rgb(81, 81, 81);
+        width: 3px;
+        border-radius: 2px;
+      }
+      .arrow-second {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: 50%;
+      }
+      .arrow-second div {
+        height: 50%;
+        background-color: rgb(255, 0, 0);
+      }
+      .circle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        border-radius: 50%;
+      }
+    </style>
+
+    <div class="calendar">
+      <div class="date-item">
+        <p>День:</p>
+        <p class="date-day"></p>
+      </div>
+      <div class="date-item">
+        <p>Число:</p>
+        <p class="date-date"></p>
+      </div>
+      <div class="date-item">
+        <p>Місяць:</p>
+        <p class="date-month"></p>
+      </div>
+      <div class="date-item">
+        <p>Рік:</p>
+        <p class="date-year"></p>
+      </div>
+    </div>
+
+    <div class="digital-clock"></div>
+
+    <div class="clock-container">
+      <div class="clock">
+        <div class="arrow-hour">
+          <div></div>
+        </div>
+        <div class="arrow-minute">
+          <div></div>
+        </div>
+        <div class="arrow-second">
+          <div></div>
+        </div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <script src="/js/chuse-day.js"></script>
+  </body>
+</html>
